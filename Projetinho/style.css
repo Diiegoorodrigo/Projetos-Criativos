@@ -116,7 +116,7 @@ footer {
     }
     
     h1 {
-        font-size: 3vh;
+        font-size: 1.5vh;
         padding: 20px;
         margin: auto;
     
@@ -138,19 +138,19 @@ footer {
 
 section h2 {
     
-    font-size: 3vh;
+    font-size: 1.5vh;
     text-transform: uppercase;
 }
 section p {
 
-    font-size: 2.5vh;
+    font-size: 1.3vh;
 }
 
 footer {
 
     background-color: gray;
     color: white;
-    font-size: 2vh;
+    font-size: 1.5vh;
     font-weight: bold;
     padding: 10px;
     text-align: center;
