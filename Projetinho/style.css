@@ -5,6 +5,8 @@
     padding: 0;
 }
 
+
+
 body {
 
     background-color: black;
@@ -94,6 +96,60 @@ input[type="submit"] {
 footer {
     background-color: gray;
     color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+@media screen  and (max-width:350px) {
+
+   
+    header {
+
+        color: white;
+        background-color: #1593e7;
+        font-weight: bold;
+        font-variant: small-caps;
+        text-align: center;
+        margin: auto;
+        max-height: 75px;
+    }
+    
+    h1 {
+        font-size: 3vh;
+        padding: 20px;
+        margin: auto;
+    
+}
+
+
+#formContainer{
+
+    background-color: rgba(255, 255, 255, 0.582);
+    color: black;
+    float: none;
+    margin: auto;
+    max-width: 230px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+section h2 {
+    
+    font-size: 3vh;
+    text-transform: uppercase;
+}
+section p {
+
+    font-size: 2.5vh;
+}
+
+footer {
+    background-color: gray;
+    color: white;
+    font-size: 2vh;
     font-weight: bold;
     padding: 10px;
     text-align: center;
