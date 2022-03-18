@@ -129,7 +129,7 @@ main p{
 
 main > p > a > img {
 
-text-align: center;  
+display: inline-block; 
 max-width: 23%;
 border-radius: 50%;
 padding-left: 30px;
