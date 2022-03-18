@@ -116,7 +116,7 @@ footer {
     }
     
     h1 {
-        font-size: 1.5vh;
+        font-size: 14px;
         padding: 20px;
         margin: auto;
     
@@ -138,12 +138,12 @@ footer {
 
 section h2 {
     
-    font-size: 1.5vh;
+    font-size: 14px;
     text-transform: uppercase;
 }
 section p {
 
-    font-size: 1.3vh;
+    font-size: 12px;
 }
 
 footer {
