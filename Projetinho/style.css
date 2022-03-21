@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+/* Linha 5 comando para definir propriedades universais no código, como exemplo abaixo definindo a margin e padding */
+
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +16,8 @@ body {
     
 
 }
+
+/* na linha 22 foi criado um id na div para conter o conteudo dentro da div */
 
 #container {
 
@@ -44,6 +48,8 @@ section {
     overflow: hidden;
 }
 
+/* Na linha 53 foi criado um id para estabelecer as propriedades da div que está contendo os formulários */
+
  #formContainer{
 
     background-color: rgba(255, 255, 255, 0.582);
@@ -70,6 +76,8 @@ section p {
     
 }
 
+/* na linha 83 foi definido o comando box-sizing: border-box para que as caixas dos formularios ficassem iguais */
+
 input, select {
     width: 100%;
     box-sizing: border-box;
@@ -77,6 +85,8 @@ input, select {
     padding: 10px;
     margin-bottom: 10px;
 }
+
+/* na função select usamos alguns comandos para tirar a seta na função select, sendo eles  os comandos da linha 92 até a linha 94, para depois adicionarmos uma imagem de seta, para que ficasse uma setinha padrão em todos os navegadores */
 
 select {
     appearance: none;
@@ -100,6 +110,9 @@ footer {
     padding: 10px;
     text-align: center;
 }
+
+
+/* Na linha 117 criamos o Media Query para responsividade em aparalhos celulares para tela menores que 401px atribuindo as formas que o site vai se comportar com uma tela nesse tamanho */
 
 @media screen  and (max-width:401px) {
 
