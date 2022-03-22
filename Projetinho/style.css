@@ -112,9 +112,9 @@ footer {
 }
 
 
-/* Na linha 117 criamos o Media Query para responsividade em aparalhos celulares para tela menores que 401px atribuindo as formas que o site vai se comportar com uma tela nesse tamanho */
+/* Na linha 117 criamos o Media Query para responsividade em aparalhos celulares para tela menores que 460px atribuindo as formas que o site vai se comportar com uma tela nesse tamanho */
 
-@media screen  and (max-width:401px) {
+@media screen  and (max-width:460px) {
 
    
     header {
