@@ -50,7 +50,7 @@ header {
 }
 
 header img.aldeia-logo{
-    width: 30%;
+    width: 300px;
     display: block;
     margin: auto;
     border-radius: 30%;
@@ -94,22 +94,25 @@ main {
     margin: auto;
     padding-top: 50px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
 }
 
 main img.st{
     display: block;
-    width: 15%;
+    width: 23%;
     margin: auto;
     border-radius: 50%;
-    padding-bottom: 20px;
+  
 }
 main h1 {
 
     text-align: center;
     font-family: var(--font01);
     color: black;
-    font-size: 3.5em;
+    font-size: 46px;
     font-weight: normal;
+    margin-top: 50px;
+    margin-bottom: 50px;
 
 
 }
@@ -127,13 +130,12 @@ main p{
 
 
 
-main > p > a > img {
+main > div > div > a > img {
 
-display: inline-block; 
-max-width: 23%;
+ 
+width: 150px;
 border-radius: 50%;
-padding-left: 30px;
-margin: auto;
+
 
 }
 
@@ -146,6 +148,29 @@ aside a {
   
 }
 
+div.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.c2 {
+
+    
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.c3 {
+
+    
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
 
 
 
@@ -154,4 +179,170 @@ footer {
     background-color: var(--cor5);
     text-align: center;
     color: white;
+}
+
+
+@media screen and (max-width:400px) {
+
+
+    body {
+        background-color: var(--cor5)
+    
+    }
+    
+    p {
+        font-family: var(--font-padrao);
+        font-size: 14px;
+        font-weight: normal;
+    
+    }
+    
+    header {
+      
+        padding: 20px;
+    
+    }
+    
+    header img.aldeia-logo{
+        width: 150px;
+        display: block;
+        margin: auto;
+        border-radius: 30%;
+    
+    }
+    header p {
+        text-align: center;
+    }
+    
+    nav {
+    
+        background-image: linear-gradient(to right, var(--cor4,), transparent);
+        padding: 10px;
+    
+        
+        
+    }
+    
+    nav a { 
+    
+        font-family: var(--font-padrao);
+        font-size: 10px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px;
+        transition-duration: 0.5s;
+        padding-bottom: 10px;
+    }
+    
+    nav a:hover {
+        background-color: var(--cor5);
+        border-radius: 5px;
+    }
+    
+    
+    main {
+    
+        background-color: white;
+        max-width: 400px;
+        margin: auto;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    }
+    
+    main img.st{
+
+        display: block;
+        width: 150px;
+        margin: auto;
+        border-radius: 50%;
+        
+    }
+    main h1 {
+    
+        text-align: center;
+        font-family: var(--font01);
+        color: black;
+        font-size: 26px;
+        font-weight: normal;
+        margin-bottom: 50px;
+    
+    
+    }
+    
+    main p{
+    
+        text-align: justify;
+        font-weight: normal;
+        font-size: 14px;
+        text-indent: 30px;
+        line-height: 2em;
+        margin: 15px 0px;
+        padding: 20px;
+    }
+    
+    
+    
+    main > div > div > a > img {
+    
+     
+    width: 75px;
+    border-radius: 50%;
+    
+    
+    }
+    
+    aside {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    aside a {
+        padding-right: 10px;
+      
+    }
+    
+    div.container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      
+    }
+    
+    .c2 {
+    
+        
+        margin-bottom: 50px;
+        display: flex;
+        
+    }
+    
+    .c3 {
+    
+        
+        display: flex;
+       
+        margin-bottom: 50px;
+    }
+
+   
+    
+    
+    
+    
+    
+    footer {
+        background-color: var(--cor5);
+        text-align: center;
+        color: white;
+        font-size: 10px;
+        padding: 20px;
+    }
+
+
+
+
+
+
+
+
+    
 }
