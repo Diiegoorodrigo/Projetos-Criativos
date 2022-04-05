@@ -1,0 +1,581 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root 
+{
+    --font1: 'Montserrat', sans-serif;
+    --font2: 'Open Sans', sans-serif;
+    --color1:  #0A1128;
+    
+    
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html
+{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  
+}
+
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    color: var(--color1)
+    line-height: 1.5;
+    background-color: black;
+   
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font1)
+  }
+
+  h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+  }
+  
+  h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+  }
+  
+  h2 {
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+  
+  h3 {
+    font-size: 5rem;
+  }
+  
+  h4 {
+    font-size: 4.5rem;
+  }
+  
+  h5 {
+    font-size: 4rem;
+  }
+  
+  h6 {
+    font-size: 3.5rem;
+  }
+
+a
+{
+    text-decoration: none;
+    color: var(--color1)
+}
+
+.section
+{
+    min-height: 100vh;
+    padding: 100px;
+    min-width: 100vh;
+    
+}
+
+.content
+{
+    max-width: 1200px;
+    margin: auto;
+    
+}
+
+.bgdark
+{
+    background-image: url(../img/Colored\ Shapes.svg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.bgwhite
+{
+    background-color: white;
+    color: var(--color1);
+}
+
+.menu
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(253, 252, 252);
+    min-width: 100vh;
+    height: 65px;
+    padding-left: 40px;
+    padding-right: 40px;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1;
+    border-bottom: 0.1rem solid rgba(211, 211, 211, 0.404);
+}
+
+.logo 
+{
+    font-size: 3rem;
+}
+
+.menu ul 
+{
+    display: flex;
+    list-style: none;
+    
+
+}
+
+.menu ul li a 
+{
+    padding: 2rem;
+    position: relative;
+}
+
+.menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: crimson; 
+    transition: all 300ms ease-in-out;
+  }
+  
+  .menu ul li a:hover::after {
+    width: 50%;
+    left: 25%;
+  }
+
+.home-content
+{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    width: 100%;   
+  
+}
+
+.home-text 
+{
+    display: flex;
+    flex-flow: column wrap;
+
+    
+}
+
+.home-text h2 
+{
+    font-size: 6rem;
+    margin-bottom: 3rem;
+
+}
+
+.home-img img 
+{
+    display: flex;
+    justify-content: center;
+    min-width: 300px;
+    
+}
+
+.intro-content
+{
+    display: flex;
+    flex-flow: column  wrap;
+    max-width: 60rem;
+    text-align: center;
+
+    
+}
+
+.intro-content h2 
+{
+    
+    margin-bottom: 5rem;
+    font-weight: bold;
+}
+
+.intro-content p 
+{
+    margin-bottom: 3rem;
+    
+}
+
+.top3-content
+{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 3rem;
+}
+
+.top3-content h2 
+{
+    font-size: 5rem;
+    margin-bottom: 0;
+}
+
+.top3-content .p3
+{
+    
+    padding-bottom: 100px;
+    
+}
+
+.grid-content
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    flex-wrap: wrap;
+    counter-reset: grid-counter;
+}
+
+.grid-content h3
+{
+    font-size: 3.5rem;
+    padding-bottom: 3rem;
+    padding-left: 7rem;
+    position: relative;
+}
+
+.grid-content h3::before
+{
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    font-size: 8rem;
+    font-style: italic;
+    top:-4rem;
+    left: 0rem;
+    transform: rotate(5deg);
+    
+}
+
+.gallery-img
+{
+    max-width: 36rem;
+    max-height: 36rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.gallery-img img 
+{
+    transition: all 300ms ease-in-out;
+}
+
+.gallery-img img:hover
+{
+    transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+}
+
+.h2-work
+{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.responsive-table
+{
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+table 
+{
+    width: 100%;
+    border-collapse: collapse;
+    white-space: nowrap;
+}
+
+table td, table th
+{
+    border: 0.1rem solid lightgray ;
+    padding: 1rem;
+    text-align: left;
+}
+
+tfoot td
+{
+    text-align: center;
+    background-color: #d8d7d7;
+}
+
+thead 
+{
+    background-color: #d8d7d7;
+}
+
+caption
+{
+    margin-bottom: 1rem ;
+    text-align: left;
+    font-size: 1.6rem;
+    font-style: italic;
+}
+
+.form-content 
+{
+    grid-column: span 2;
+}
+
+.form-content .form-grid
+{
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.form-group
+{
+    flex: 1 1 320px;
+}
+
+.form-group label
+{
+    display: block;
+    padding-bottom: 1rem;
+
+}
+
+.form-group input, .form-group textarea
+{
+    border: none;
+    background-color: white;
+    padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 3rem;
+    outline: none;
+}
+
+legend  
+{
+    padding-bottom: 2rem;
+    font-style: italic;
+}
+
+div.full-width
+{
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  box-shadow: 0 0 10px 2px crimson;
+}
+
+.form-group button {
+    border: 0.5rem solid white;
+    background: none;
+    color: white;
+    padding: 1.5rem 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+  }
+
+  .form-group button:hover {
+    background: white;
+    color: var(--color1);
+  }
+
+  footer 
+  {
+      width: 3rem;
+      width: 100%;
+      background-color: #cacaca;
+      text-align: center;
+      padding: 1.5rem;
+  }
+
+  .heart
+  {
+      color: red;
+  }
+
+  .back-top
+{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: white;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+}
+
+
+
+  .close-menu
+  {
+      display: none;
+  }
+
+  @media (max-width: 800px) {
+      
+    .home-content, .grid-content {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-img {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%; 
+      }
+
+      .gallery-img img {
+        width: 100%;
+      }
+
+      .top3-content
+      {
+          display: block;
+      }
+
+    
+
+      .form-content 
+      {
+          grid-column: span 1;
+      }
+
+      .menu {
+        bottom: 0;
+        text-align: center;
+        
+      }
+    
+      .menu, .menu ul {
+        flex-direction: column;
+        justify-content: space-between;
+        
+        
+      }
+      
+      .logo 
+      {
+        padding-top: 10rem;
+      }
+
+      .menu ul 
+      {
+          padding-bottom: 10rem;
+      }
+
+      .menu ul li 
+      {
+          margin-top: 3rem;
+      }
+    
+      .menu {
+        height: 100vh;
+      }
+
+      .menu
+      {
+          display: none;
+      }
+
+      .menu {
+        bottom: 0;
+        text-align: center;
+      }
+    
+      .menu-content, .menu-content ul {
+        flex-direction: column;
+        justify-content: center;
+      }
+    
+      .menu-content {
+        height: 100vh;
+      }
+    
+      .menu {
+        display: none;
+      }
+    
+      .close-menu-label::after {
+        content: '☰';
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        right: 2rem;
+        background:var(--color1);
+        color: white;
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+      }
+    
+      .close-menu:checked~.menu {
+        display: block;
+      }
+    
+      .close-menu:checked~.close-menu-label::after {
+        content: '×';
+      }
+
+      
+
+      h1 {
+        font-size: 4rem;
+      }
+    
+      h2 {
+        font-size: 3.6rem;
+      }
+    
+      h3 {
+        font-size: 3.4rem;
+      }
+    
+      h4 {
+        font-size: 3.2rem;
+      }
+    
+      h5 {
+        font-size: 3rem;
+      }
+    
+      h6 {
+        font-size: 2.8rem;
+      }
+    
+     
+
+
+
+  }
+
+
+
+
