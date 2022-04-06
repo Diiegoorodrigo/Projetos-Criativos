@@ -33,9 +33,9 @@ body
 {
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
-    color: var(--color1)
+    color: var(--color1);
     line-height: 1.5;
-    background-color: black;
+    background-color: #cacaca;
    
 }
 
@@ -419,7 +419,7 @@ div.full-width
   footer 
   {
       width: 3rem;
-      width: 100vh;
+      width: 100%;
       background-color: #cacaca;
       text-align: center;
       padding: 1.5rem;
