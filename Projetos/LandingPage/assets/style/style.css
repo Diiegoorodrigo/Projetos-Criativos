@@ -403,7 +403,7 @@ div.full-width
   footer 
   {
       width: 3rem;
-      width: 100%;
+      width: 100vh;
       background-color: #cacaca;
       text-align: center;
       padding: 1.5rem;
