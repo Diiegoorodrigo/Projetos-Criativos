@@ -18,12 +18,16 @@
     
 }
 
+/* colocado dentro do html o font-size 62.5%  que representa o tamanho de 10px a partir disso todo tamanho dentro do CSS foi estabelecido com o tamnho da raiz assim sendo os tamanhos colocados em rem */
+
 html
 {
     font-size: 62.5%;
     scroll-behavior: smooth;
   
 }
+
+/* scroll-behavior:smooth foi para a pagina ir rolando de uma seção para outra */
 
 body
 {
@@ -75,8 +79,10 @@ h1, h2, h3, h4, h5, h6 {
 a
 {
     text-decoration: none;
-    color: var(--color1)
+    color: var(--color1);
 }
+
+/* definido que cada sessão teria  o tamanho minimo com 100% do viewport */
 
 .section
 {
@@ -145,6 +151,8 @@ a
     padding: 2rem;
     position: relative;
 }
+
+/* configuração para animação dos links no menu */
 
 .menu ul li a::after {
     content: '';
@@ -282,6 +290,8 @@ a
     transition: all 300ms ease-in-out;
 }
 
+/* codigo para animação com as imagens */
+
 .gallery-img img:hover
 {
     transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
@@ -368,17 +378,23 @@ caption
     outline: none;
 }
 
+/* outiline:none é para que a area selecionada nos input não ficasse mostrando uma borda ao redor */
+
 legend  
 {
     padding-bottom: 2rem;
     font-style: italic;
 }
 
+/* criado uma classe para colocar o tamanho do text area na largura inteira da tela pra ele ficar abaixo dos outros inputs*/
+
 div.full-width
 {
     width: 100%;
     flex: 1 1 100%;
 }
+
+/* comando para que a area selecionada ficasse com uma borda */
 
 .form-group input:focus,
 .form-group textarea:focus {
@@ -519,6 +535,9 @@ div.full-width
         display: none;
       }
     
+
+      /*  CODIGO PARA CRIAR UM MENU INTERATIVO PARA ADAPTAR COM RESPONSIVIDADE MOBILE APENAS COM CSS */
+
       .close-menu-label::after {
         content: '☰';
         position: fixed;

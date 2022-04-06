@@ -10,12 +10,17 @@
 <body>
 
     
+        <!--CRIÇÃO DO INPUT PARA ADAPTAÇÃO PARA MENU MOBILE COM CSS-->
+
     <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
      <label class="close-menu-label" for="close-menu" title="close menu"></label>
+ 
+
+        <!--CRIAÇÃO DO MENU -->
 
     <div class="menu">
 
-        <h1 class="logo" >
+        <h1 class="logo" onclick="getElementById('close-menu').checked = false;">
             <a href="#home">Logo</a>
         </h1>
 
@@ -28,6 +33,12 @@
             <li><a href="#contact">contact</a></li>
         </ul>
     </div>
+
+    <!--FIM DA CRIAÇÃO DO CONTEUDO DO MENU-->
+
+
+    <!--INICIO DA SECTION INICIAL-->
+
     <section id="home" class="section bgdark">
         <div class="content home-content">
             <div class="home-text">
@@ -44,6 +55,11 @@
             </div>
         </div>
     </section>
+
+        <!--FIM DA SECTION INICIAL-->
+
+        <!-- INICIO DA SECTION INTRO -->
+
     <section id="intro" class="section bgwhite">
         <div class="content intro-content">
             <h2>
@@ -60,6 +76,11 @@
             </p>
         </div>
     </section>
+
+     <!--FIM DA SECTION INTRO-->
+
+      <!--INICIO DA SECTION TOP3-->
+
     <section id="top3" class="section bgdark">
         <div class="top3-content content">
             <h2>
@@ -102,6 +123,11 @@
     
         </div>
     </section>
+
+     <!--FIM DA SECTION TOP3-->
+
+    <!--INICIO DA SECTION GALLERY-->
+
     <section id="gallery" class="section bgwhite">
         <div class="top3-content content">
             <h2>
@@ -110,6 +136,9 @@
             <p class="p3">
                 Here are some recent work.
             </p>
+
+             <!--GRID COM AS IMAGENS-->
+
             <div class="grid-content">
                 <div class="gallery-img">
                     <img src="http://source.unsplash.com/random/360x360?r=1" alt="random image from unsplash" />
@@ -135,6 +164,11 @@
     
         </div>
     </section>
+
+     <!--FIM DA SECTION GALLERY-->
+
+     <!--INICIO DA SECTION WORK-->
+
     <section id="work" class="section bgdark">
         <div class="top3-content content">
             <h2 class="h2-work" >
@@ -175,6 +209,12 @@
     
         </div>
     </section>
+
+     <!--FIM DA SECTION WORK-->
+
+
+      <!--INCIO DA SECTION PRICING-->
+
     <section id="pricing" class="section bgwhite">
         <div class="content intro-content">
             <h2>
@@ -230,6 +270,12 @@
            
         </div>
     </section>
+
+     <!--FIM DA SECTION PRICING-->
+
+
+      <!--INCIO DA SECTION CONTACT-->
+
     <section id="contact" class="section bgdark">
         <div class="content home-content">
             <div class="home-text">
@@ -277,6 +323,10 @@
               </div>
         </div>
     </section>
+
+     <!--FIM DA SECTION CONTACT-->
+
+
     <footer>
         <p>Feito com <span class="heart">♥</span>  por <a href="#">Diegão</a></p>
     </footer>
