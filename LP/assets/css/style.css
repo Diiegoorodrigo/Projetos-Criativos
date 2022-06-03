@@ -27,8 +27,6 @@
     justify-content: space-around;
     max-height: 60px;
     padding: 20px;
-    border-bottom: solid 1px red;
-   
 }
 
 
@@ -363,6 +361,64 @@ padding-top: 100px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 30px;
 }
 
+.text-box
+{
+    width: 768px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 0 32px;
+}
 
+.text-box h2
+{
+ font-size: 36px;
+ font-weight: 600;
+ color: var(--colorOne);
+}
+
+.text-box p
+{
+ font-size: 20px;
+ font-weight: 400;
+ color: var(--colorTwo)
+}
+
+.email input
+{
+    width: 360px;
+    height: 24px;
+    padding: 14px;
+    border-radius: 8px;
+    border: solid 0.4px #a3a3a3;
+    font-size: 16px;
+    color: var(--colorTwo);
+    margin-right: 16px;
+}
+
+.bt-em
+{
+    width: 130px;
+    height: 54px;
+    padding: 14px 20px;
+    border-radius: 8px;
+    background-color: var(--colorFour);
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+footer
+{
+    margin-top: 30px;
+    margin-bottom: 96px;
+    font-size: 16PX;
+    color: #98A2B3;;
+    font-weight: 400;
+}
