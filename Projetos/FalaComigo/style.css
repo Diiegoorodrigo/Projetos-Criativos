@@ -69,21 +69,22 @@ button
     padding: 20px;
     
     gap: 50px;
-    background-image: url('alice_expo_20.jpg');
+    background-image: url('alice_expo_20-fotor-20230902181342.jpg');
     background-size: cover;
     background-position: center center;
     animation: bgChanged 3s;
     
 }
 
-.txt
+.txt 
 {
-    color: white;
+   font-size: 20px;
     font-weight: bolder;
-    font-size: 16px;
     font-family: 'Courier New', Courier, monospace;
+    
 
 }
+
 
 h1
 {
