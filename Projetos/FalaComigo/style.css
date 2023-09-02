@@ -60,7 +60,7 @@ button
 .change
 {
     max-width: 600px;
-    height: 400px;
+    height: 500px;
     margin: auto;
     display: none;
     flex-direction: column;
