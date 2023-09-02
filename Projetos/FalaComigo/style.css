@@ -48,13 +48,13 @@
     gap: 50px;
 }
 
-a
 
+button
 {
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    font-weight: bold;   
+    width: 100px;
+    height: 50px;
+    border-radius: 16px;
+    border: none;
 }
 
 .change
@@ -83,6 +83,12 @@ a
     font-size: 16px;
     font-family: 'Courier New', Courier, monospace;
 
+}
+
+h1
+{
+    font-size: 32px;
+    color: white;
 }
 
 @keyframes bgChanged {
