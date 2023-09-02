@@ -59,8 +59,8 @@ a
 
 .change
 {
-    max-width: 800px;
-    height: 600px;
+    max-width: 600px;
+    height: 400px;
     margin: auto;
     display: none;
     flex-direction: column;
@@ -90,7 +90,7 @@ a
 
     0% {
         width: 0px;
-        border-radius: 80%;
+        border-radius: 50%;
         transform: rotateY(0) rotate(2090deg);
     }
 
