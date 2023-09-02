@@ -70,7 +70,7 @@ a
     background-image: url('alice_expo_20.jpg');
     background-size: cover;
     background-position: center center;
-    
+    animation: bgChanged 5s;
     
 }
 
