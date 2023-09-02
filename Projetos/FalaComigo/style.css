@@ -70,8 +70,20 @@ a
     background-image: url('alice_expo_20.jpg');
     background-size: cover;
     background-position: center center;
-    animation: bgChanged 5s;
     
+    
+}
+
+.txt
+{
+    font-family: monospace;
+    border-right: 4px solid;
+    width: 11ch;
+    white-space: nowrap;
+    overflow: hidden;
+    color: white;
+
+    animation: txtA 2s steps(11), blink 0s infinite step-end alternate;
 }
 
 @keyframes bgChanged {
@@ -88,6 +100,22 @@ a
         width: 100%;
         border-radius: 10px;
         transform: rotateY(-100px) rotate(360deg);
+    }
+    
+}
+
+@keyframes txtA {
+
+    from {
+        width: 0;
+    }
+    
+    
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
     }
     
 }
