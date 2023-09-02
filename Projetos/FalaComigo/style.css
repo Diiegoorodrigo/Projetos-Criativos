@@ -26,7 +26,8 @@
     max-width: 800px;
     height: 600px;
     margin: auto;
-    background-color: purple;
+    background: url('alice_expo_21.jpg') center center no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,6 +35,7 @@
     gap: 50px;
     border-radius: 50px;
     padding: 20px;
+    
     
 }
 
@@ -55,10 +57,37 @@ a
     font-weight: bold;   
 }
 
-button
+.change
 {
-    width: 100px;
-    border-radius: 20px;
-    height: 50px;
-    border: none;
+    max-width: 800px;
+    height: 600px;
+    margin: auto;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-image: url('alice_expo_20.jpg');
+    background-size: cover;
+    background-position: center center;
+    animation: bgChanged 5s;
+    
+}
+
+@keyframes bgChanged {
+
+    from {
+        width: 0px;
+        border-radius: 80%;
+        transform: rotateY(0) rotate(2090deg);
+    }
+
+    
+
+    to {
+        width: 100%;
+        border-radius: 10px;
+        transform: rotateY(-100px) rotate(360deg);
+    }
+    
 }
